@@ -1,0 +1,5 @@
+package com.pluralcamp.presentation.annotations;
+
+public class HelloWorld {
+
+}

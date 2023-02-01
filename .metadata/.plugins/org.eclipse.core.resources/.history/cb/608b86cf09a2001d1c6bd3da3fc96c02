@@ -1,0 +1,14 @@
+package com.pluralcamp.reflection;
+
+public class Main {
+
+	public static void main(String[] args) throws ClassNotFoundException {
+		
+		//Instrospection
+		Class<?> helloWorldClass =
+				Class.forName("com.pluralcamp.reflection.HelloWorld");
+		System.out.println(helloWorldClass);
+
+	}
+
+}

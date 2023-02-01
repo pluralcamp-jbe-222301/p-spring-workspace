@@ -1,0 +1,24 @@
+package com.pluralcamp.reflection;
+
+import java.lang.reflect.Constructor;
+
+public class Main {
+
+	public static void main(String[] args) throws ClassNotFoundException {
+		
+		//Instrospection
+		Class<?> helloWorldClass =
+				Class.forName("com.pluralcamp.reflection.HelloWorld");
+		System.out.println(helloWorldClass);
+		
+		// An array of contructors
+		Constructor[] constructors = helloWorldClass.getConstructors();
+		System.out.printf("La clase %s tiene %d constructores", 
+				helloWorldClass, constructors.length);
+		
+		// Apply newInstance method
+			//helloWorld = constructors[0]
+
+	}
+
+}

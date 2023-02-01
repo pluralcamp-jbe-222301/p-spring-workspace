@@ -1,0 +1,5 @@
+package com.pluralcamp.presentation.entity;
+
+public class Student {
+
+}
