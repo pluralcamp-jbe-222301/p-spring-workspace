@@ -2,6 +2,7 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="/home/orboan/spring-workspace2/spring-core-example"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -46,10 +47,10 @@
 			<item value="com.pluralcamp"/>
 		</list>
 		<list key="name">
-			<item value="spring-core-example"/>
+			<item value="spring-aop-demo"/>
 		</list>
 		<list key="artifactId">
-			<item value="spring-core-example"/>
+			<item value="spring-aop-demo"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
