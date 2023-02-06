@@ -17,4 +17,12 @@
 			<item value="/home/orboan/spring-workspace2/spring-pluralcamp-aop"/>
 		</list>
 	</section>
+	<section name="ChooseWorkspaceDialogSettings">
+		<item key="DIALOG_X_ORIGIN" value="382"/>
+		<item key="DIALOG_Y_ORIGIN" value="182"/>
+	</section>
+	<section name="WORKBENCH_SETTINGS">
+		<list key="ENABLED_TRANSFERS">
+		</list>
+	</section>
 </section>

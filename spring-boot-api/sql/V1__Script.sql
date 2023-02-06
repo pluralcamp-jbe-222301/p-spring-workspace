@@ -1,5 +1,5 @@
 CREATE DATABASE spring_data1;
-
+use spring_data1;
 
 CREATE TABLE `spring_data1`.`student` (
   `idstudent` INT NOT NULL AUTO_INCREMENT,
