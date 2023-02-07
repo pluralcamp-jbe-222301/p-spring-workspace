@@ -12,6 +12,8 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="/home/orboan/p-spring-workspace/spring-boot-web"/>
+			<item value="/home/orboan/p-spring-workspace/spring-boot-api"/>
 			<item value="/home/orboan/p-spring-workspace-sol/spring-boot-web"/>
 			<item value="/home/orboan/p-spring-workspace-sol/spring-boot-api"/>
 			<item value="/home/orboan/jbe/spring-workspace/spring-boot-web"/>
