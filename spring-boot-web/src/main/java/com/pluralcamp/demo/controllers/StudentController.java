@@ -6,7 +6,6 @@ import org.springframework.core.ParameterizedTypeReference;
 import org.springframework.http.MediaType;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -56,13 +55,16 @@ public class StudentController {
 		return this.getStudents(model);
 	}
 	
-	@DeleteMapping(path="/delete/student/{id}")
-	public Mono<Student> deletePost(@PathVariable String id) {
-		
-		return this.webClient.delete()
-				 .uri("/student/delete/id/" + id)
+	@GetMapping(path="/students/delete/{id}")
+	public String deleteStudent(@PathVariable String id, Model model) {
+		System.out.println("Deleting student with id=" + id);
+		Mono<String> response = this.webClient.delete()
+				 .uri("/student/delete/id/" + id)				 
 				 .retrieve()
-				 .bodyToMono(Student.class);
+				 .bodyToMono(String.class);
+		String message = response.block();
+		model.addAttribute("message", message);
+		return this.getStudents(model);
 	}	
 	
 }

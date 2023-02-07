@@ -92,7 +92,7 @@ h2 {
 	color: #deddda;
 }
 
-#newstudent {
+#newstudent, #message {
 	text-align: center;
 	margin-top: 20px;
 }
