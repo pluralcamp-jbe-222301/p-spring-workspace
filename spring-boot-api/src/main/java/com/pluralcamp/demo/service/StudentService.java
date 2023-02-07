@@ -67,5 +67,13 @@ public class StudentService {
 		}
 	}
 	
+	/**
+	 * @param student
+	 * @return l'objecte Student guardat a la base de dades
+	 */
+	public void deleteStudentById(Integer id) {
+		this.studentRepository.deleteById(id);
+	}
+	
 	
 }
