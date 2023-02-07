@@ -49,6 +49,14 @@ table.center {
 			</tr>
 		</tbody>
 	</table>
+	<div th:if="${createdStudent}" id="newstudent">
+		<h4>New student created:</h4>
+		<p>Id: <span th:text="${createdStudent.idstudent}"></span></p>
+		<p>Name: <span th:text="${createdStudent.name}"></span></p>
+		<p>Surname: <span th:text="${createdStudent.surname}"></span></p>	
+		<p>Age: <span th:text="${createdStudent.age}"></span></p>		
+	</div>
+
 	<!-- /.container -->
 	<script type="text/javascript"
 		th:src="@{webjars/bootstrap/5.2.3/js/bootstrap.min.js}"></script>

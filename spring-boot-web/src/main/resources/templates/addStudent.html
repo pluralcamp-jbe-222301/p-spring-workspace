@@ -38,23 +38,30 @@ table.center {
 					<div class="single">
 						<form action="#" th:action="@{/addStudent}" th:object="${student}"
 							method="post" class="input-group">
+							<fieldset>
 							<input type="hidden" value="0" th:field="*{idstudent}" /> 
-							<label for="name">Name:</label>
+							<p class="form-control">
+							<label for="name">Name: </label>
 							<input id="name"
-								type="text" class="form-control" th:field="*{name}"
+								type="text" th:field="*{name}"
 								placeholder="Enter your name" /> 
-							<label for="surname">Surname:</label>
+							</p>
+							<p class="form-control">	
+							<label for="surname">Surname: </label>
 							<input type="text" id="surname"
-								class="form-control" th:field="*{surname}"
-								placeholder="Enter your surname" /> 
-							<label for="age">Age:</label>	
+								th:field="*{surname}"
+								placeholder="Enter your surname" />
+							</p>
+							<p class="form-control"> 
+							<label for="age">Age: </label>	
 							<input type="text" id="age"
-								pattern="\d*" class="form-control" th:field="*{age}"
+								pattern="\d*"  th:field="*{age}"
 								placeholder="Enter your age" />
-								
-							<span class="input-group-btn">
+							</p>
+							<p class="input-group-btn">
 								<button class="btn btn-theme" type="submit">Submit</button>
-							</span>
+							</p>
+							</fieldset>
 						</form>
 					</div>
 				</div>

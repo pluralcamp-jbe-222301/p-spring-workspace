@@ -49,8 +49,9 @@ public class StudentController {
 				.retrieve()
 				.bodyToMono(new ParameterizedTypeReference<Student>() {});
 		Student createdStudent = response.block();
-		model.addAttribute("student", createdStudent);
-		return "students";
+		model.addAttribute("createdStudent", createdStudent);
+		//return "students";
+		return this.getStudents(model);
 	}
 	
 }
